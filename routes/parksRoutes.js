@@ -9,6 +9,7 @@ router.use((_req, _res, next) => {
     next();
 });
 
+// Function Reads accessiblePlaygrounds.json data for [GET Requests]
 function readParks() {
     const parksData = fs.readFileSync("./data/parksData.json");
     const parsedParksData = JSON.parse(parksData);

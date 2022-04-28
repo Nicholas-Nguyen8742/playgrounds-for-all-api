@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 const app = express();
+import parksRoutes from "./routes/parksRoutes.js";
 
 
 // Configuration 
@@ -21,11 +22,11 @@ app.use((req, res, next) => {
 })
 
 app.get("/", (req, res)=> {
-    res.send("Welcome to Nick's API XDD");
+    res.send("Welcome to Nick's & Colton's API XDD");
 });
 
 // Middleware: Routes to 
-// app.use("/parks", parksRoutes);
+app.use("/parks", parksRoutes);
 
 // Start Server
 app.listen(PORT, () => {
