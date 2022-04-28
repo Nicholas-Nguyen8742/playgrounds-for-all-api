@@ -24,7 +24,7 @@ app.get("/", (req, res)=> {
     res.send("Welcome to Nick's API XDD");
 });
 
-//Middleware: Routes to 
+// Middleware: Routes to 
 // app.use("/parks", parksRoutes);
 
 // Start Server
