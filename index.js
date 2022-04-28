@@ -24,6 +24,9 @@ app.get("/", (req, res)=> {
     res.send("Welcome to Nick's API XDD");
 });
 
+//Middleware: Routes to 
+// app.use("/parks", parksRoutes);
+
 // Start Server
 app.listen(PORT, () => {
     console.log("App is running at port" + PORT)
