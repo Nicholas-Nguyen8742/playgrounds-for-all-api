@@ -1,11 +1,11 @@
-import express from "express";
-import cors from "cors";
+const express = require('express');
+const cors = require("cors");
 const app = express();
-import parksRoutes from "./routes/parksRoutes.js";
+const parksRoutes = require("./routes/parks");
 
 
 // Configuration 
-import 'dotenv/config'
+const env = require("dotenv"); 
 const PORT = process.env.PORT || 8080
 
 // Invoke cors middleware to allow requests from the browser
